@@ -89,6 +89,7 @@ p{
       border-left: solid black 3px;
       padding-top: 20px;
       font-weight: bold;
+      overflow: auto;
     }
   
   .Profile { 
@@ -107,6 +108,7 @@ p{
       height: 250px;
       background-color: beige;
       border-left: solid black 3px;
+      overflow: auto;
     }
   
   .Education { 
@@ -117,6 +119,7 @@ p{
       height: 298px;
       background-color: beige;
       border-left: solid black 3px;
+      overflow: auto;
     }
   
   .Experience { 
@@ -125,6 +128,7 @@ p{
       border-bottom: solid black 3px;
       padding: 10px;
       height: 568px;
+      overflow: auto;
     }
 
 .location {
