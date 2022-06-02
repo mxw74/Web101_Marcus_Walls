@@ -2,32 +2,38 @@
 
 .container {  
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.1fr .0fr .1fr 0.0fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Header Header Profile-Pic"
-      "Contact-Info Profile Profile"
-      "Skills Experience Experience"
-      "Skills Experience Experience"
-      "Education Experience Experience"
-      "Education Experience Experience";
+      ". Header Header Profile-Pic ."
+      ". Contact-Info Profile Profile ."
+      ". Skills Experience Experience ."
+      ". Skills Experience Experience ."
+      ". Education Experience Experience ."
+      ". Education Experience Experience .";
   }
 
-  .container * {
+  /* .container * {
     border: 1px solid red;
     position: relative;
-  } 
+  }  */
 
 h1 {
-    font-style: bolder;
-    text-decoration: underline;
+    font-weight: bolder;
+    text-decoration:overline;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h2 {
+    position: relative;
+    width: auto;
+    text-decoration: overline;
+}
+
 h3{
-    font-style: bolder;
+    font-weight: bolder;
     text-decoration: underline;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -49,46 +55,54 @@ p{
     background-color: beige ;
     padding-left: 40px;
     font-size: 30pt;
-    border-bottom: solid black 3px;
-    border-left: solid black 3px;
+    border-bottom: ridge beige 3px;
+    border-left: ridge black 3px;
+    border-top: solid black 3px;
 }
 
 .subheading {
     font-size: larger;
     font-style: italic;
+    text-decoration: overline;
+    text-decoration: underline;
 }
   
   .Profile-Pic { 
       grid-area: Profile-Pic; 
       place-items: center;
-      background-color: olive ;
+      background-color: beige ;
       padding-left: 100px;
+      padding-right: 100px;
       padding-top: 20px;
-      border-bottom: solid black 3px;
+      border-bottom: ridge beige 3px;
+      border-top: solid black 3px;
+      border-right: solid black 3px;
     }
   
   .Contact-Info { 
       grid-area: Contact-Info; 
-      border-right: solid black 3px;
+      border-right: ridge beige 3px;
       padding: 10px;
       height: 190px;
       background-color: beige;
-      border-bottom: solid black 3px;
+      border-bottom: ridge beige 3px;
       border-left: solid black 3px;
       padding-top: 20px;
+      font-weight: bold;
     }
   
   .Profile { 
       grid-area: Profile; 
       padding: 10px;
       height: 200px;
-      border-bottom: solid black 3px;
+      border-bottom: ridge beige 3px;
       border-right: solid black 3px;
+      overflow: auto;
     }
   
   .Skills { 
       grid-area: Skills; 
-      border-right: solid black 3px;
+      border-right: ridge beige 3px;
       padding: 10px;
       height: 250px;
       background-color: beige;
@@ -97,7 +111,7 @@ p{
   
   .Education { 
       grid-area: Education; 
-      border-right: solid black 3px;
+      border-right: ridge beige 3px;
       border-bottom: solid black 3px;
       padding: 10px;
       height: 298px;
@@ -110,7 +124,7 @@ p{
       border-right: solid black 3pt;
       border-bottom: solid black 3px;
       padding: 10px;
-      height: 570px;
+      height: 568px;
     }
 
 .location {
@@ -128,4 +142,5 @@ p{
     height: 300px;
     border-radius: 50%;
     place-items: center;
+    box-shadow: 50px 25px rgba(0, 0, 0, 0.4);
 }
