@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    background-color: beige;
+    padding: 15px;
+    border: solid black 3px;
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+
+.class2 {
+    border: ridge beige 5px;
+}
+
+.class4 {
+    border: ridge beige 5px;
+}
