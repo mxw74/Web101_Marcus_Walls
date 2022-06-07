@@ -101,9 +101,10 @@ body {
     letter-spacing: 16px;
     font-style: italic;
     min-width: 100%;
-    margin-left: 117%;
+    /* Used this margin left to align element when hyperlinked button */
+    /* margin-left: 117%; */
   }
-
+ea
   .linkedin{
     color: white;
     grid-column: 2/3;
