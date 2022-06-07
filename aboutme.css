@@ -37,7 +37,11 @@
         .heading {
             padding-right: 20px;
             padding-left: 20px;
-            border: ridge lightblue 3px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-left: ridge lightblue 3px;
+            border-bottom: ridge lightblue 3px;
+            border-top: ridge lightblue 3px;
         }
 
 
@@ -47,12 +51,35 @@
 .header {
     text-align: center;
     justify-content: center;
-    background-color: blue;
-    color: white;
+    background-color: rgb(146, 190, 225);
+    color: darkblue;
     justify-content: center;
     padding: 10px;
 }
 
+.header:hover {
+    border: ridge rgb(130, 130, 209) 2px;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+h1{
+    font-weight: bolder;
+}
+
+.h1 {
+    border-bottom: solid black 2px;
+}
+
+h2{
+    font-style: italic;
+}
+
+.h2 {
+    border-bottom: solid black 2px;
+}
 .texas {
     display: block;
     margin-left: auto;
@@ -86,7 +113,7 @@
 
 /* ___________________________________________________________ */
 /* Make mobile interface */
-@media (min-width:576px) {
+@media (min-width:650px) {
 
     .container{
         display: grid;
@@ -108,7 +135,7 @@
 
 /* ___________________________________________________________ */
  /*Re-define the grid layouts for the desktop version and make required edits  */
-@media (min-width: 970px) {
+@media (min-width: 970px;) {
     .container {  display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
