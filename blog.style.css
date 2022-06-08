@@ -16,3 +16,7 @@ h1:hover{
 .class4 {
     border: ridge beige 5px;
 }
+
+li {
+    font-weight: bold;
+}

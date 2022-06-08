@@ -100,12 +100,7 @@ h2{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    text-align: center;
-    padding-bottom: ;
-    /* justify-content: center;
-    align-items: center;
-    border: black solid 3px; */
-}
+    text-align: center;}
 
 .experience {
     display: grid;
