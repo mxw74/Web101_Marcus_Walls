@@ -1,0 +1,154 @@
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "contactus "
+      "information "
+      "location";
+  }
+h1 {
+    border-bottom: solid black 3px;
+}
+  .contactus { 
+    grid-area: contactus; 
+    background-color: #F8F8F8;
+    border-bottom: lightblue ridge 3px;
+    max-width: 100%;
+}
+
+input {
+    padding: 5px;
+}
+
+#email {
+    width: 89%;
+}
+label {
+    font-weight: bold;
+}
+
+#birthday {
+    width: 88%;
+}
+
+textarea {
+    width: 90%;
+}
+/* trying to cha ge the opacity of only the background image */
+  .information { 
+    grid-area: information; 
+    background-image: url("informationBackground.jpeg");
+    background-repeat: no-repeat;
+    /* opacity: 0.2; */
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-left: 50px;
+  }
+  /* could not get it to work */
+    /* div::before.information {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        background-image: url("contactAcaLogo.jpeg");
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        background-position: center;
+        background-size: cover;
+    } */
+
+  .location {
+    background-color: rgb(146, 190, 225);
+  }
+  
+  .googlemap{
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding-left: 10%;
+  }
+
+  .h2 {
+      padding-left: 10px;
+  }
+  .googlemap iframe {
+    top: 0;
+    left: 0;
+    width: 90%;
+  }
+
+  button {
+      padding: 5px;
+      background: lightblue;
+      color: black;
+      font-weight:bold;
+      width: 20%;
+  }
+p {
+    font-weight: bold ;
+}
+
+
+/* _____________________________________________________________ */
+/* Make for medium-small size screens */
+@media (min-width:567px) { 
+    .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "contactus "
+          "information "
+          "location";
+      }
+    
+
+
+}
+
+/* _____________________________________________________________ */
+/* Make for medium size screens */
+@media (min-width:1151px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "contactus contactus"
+          "information location";
+      }
+
+    .contactus {
+        grid-area: contactus;
+    }
+
+    .information {
+        grid-area: information;
+    }
+
+    .location {
+        grid-area: location;
+    }
+    
+}
+
+/* _____________________________________________________________ */
+/* Make for large size screens */
+@media (min-width:1100px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "contactus contactus "
+          "information location";
+      }
+    
+}

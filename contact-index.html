@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./contact-style.css">
+</head>
+<body>
+<!-- insert heading -->
+<div class="container">
+  <div class="contactus">
+    <h1>Contact Us</h1>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+
+<!-- email element -->
+
+            <div>
+                <label for="email">Email<p><input type="email" name="email" id="email" placeholder="Insert email..."></label>
+            </div>
+
+<!-- comment section included -->
+
+            <div>
+                <label for="comments">Comments</label><p>
+                <textarea name="comments" id="comments" placeholder="comments" minlength="20" maxlength="500" value="comments"></textarea>
+             </div>
+
+<!-- how did you hear about us section -->
+
+             <div><label>How did you hear about me?</label>
+                <div>
+                    <input type="checkbox" name="classmate" id="classmate" class="classmate" value="classmate">
+                    <span for="classmate">Classmate</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="submission" id="submission" class="submission" value="submission">
+                    <span for="submission">Resume Submission</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="linkedin" id="linkedin" value="linkedin">
+                    <span for="linkedin">LinkedIn</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="aca" id="aca" value="aca">
+                    <span for="aca">Austin Coding Academy Rec</span>
+                </div><p>
+             </div>
+
+<!-- Radio buttons to ask if the user wants to be contacted back : yes and no options -->
+
+             <div><label>Would you like us to contact you back?</label>
+                <div>
+                    <input type="radio" name="yes" id="yes" value="yes">
+                    <span for="yes">Yes</span>
+                </div>
+                <div>
+                    <input type="radio" name="no" id="no" value="no">
+                    <span for="no">No</span>
+                </div>
+            </div><p>
+
+<!-- Optional birthday wish? -->
+
+            <div>
+                <label for="birthday">Input birthday for a birthday wish!</label><p>
+                <input type="date" name="birthday" id="birthday" value="birthday">
+            </div>
+
+<!-- reset and submit buttons -->
+
+            <div>
+                <button type="reset">Clear Entries</button>
+                <button type="submit">Submit</button>
+            </div><p>
+
+        </form>
+
+    </div>
+
+    <div class="location">
+        <h2 class="h2">Our Location</h2>
+        <div class="googlemap">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13783.537499034752!2d-97.7405641!3d30.2688755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6644ce54fe2531c!2sAustin%20Coding%20Academy!5e0!3m2!1sen!2sus!4v1654721941042!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="austinmap"></iframe>
+        </div>
+    </div>
+
+    <div class="information">
+        <h2>Our Information</h2>
+        <br>
+        <p>Address</p>
+            <ul>701 Brazos St #1616,</ul>
+            <ul>Austin, TX 78701</ul>
+        <p>Email</p>
+            <ul>loremipsum@gmail.com</ul>
+        <br>
+        <p>Phone Numbers</p>
+        <ul>Office #:&nbsp;&nbsp;(123) 456-7890</ul>
+        <ul>Customer Support #:&nbsp;&nbsp;(123) 456-7891</ul>
+        <ul>Fax #:&nbsp;&nbsp;(123) 456-7892</ul>
+    </div>
+</div>
+<script src="./contact-scripts.js"></script>
+</body>
+</html>
